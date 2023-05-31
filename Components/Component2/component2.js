@@ -4,9 +4,9 @@ export class Component2 extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
 
-    async connectedCallback() {
+    connectedCallback() {
       
-    await this.loadTemplate();
+        this.loadTemplate();
   }
 
   async loadTemplate() {
@@ -24,7 +24,7 @@ export class Component2 extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        @import 'Components/component2/component2.css';
+        @import 'Components/component2/style.css';
       </style>
       ${this.constructor.template}
     `;

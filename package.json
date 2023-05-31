@@ -1,0 +1,24 @@
+{
+  "name": "web-components-plugin",
+  "version": "1.0.0",
+  "description": "Testing to create wcs with html/css/js and import all in one ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbWire-1/Web-Components.git"
+  },
+  "keywords": [
+    "web-components",
+    "simplify-usage",
+    "testing-approaches"
+  ],
+  "author": "BarbWire-1 aka Barbara Kälin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarbWire-1/Web-Components/issues"
+  },
+  "homepage": "https://github.com/BarbWire-1/Web-Components#readme"
+}

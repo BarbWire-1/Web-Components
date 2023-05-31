@@ -1,4 +1,6 @@
-/* NOT APPLIED */
+/* @import 'Components/component1/style.css';
+@import 'Components/component2/style.css'; */
+/* NOT APPLIED  - or better overwritten from component css*/
 #second::part(title){
     color: #ee2a4b;  
 }
