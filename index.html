@@ -1,25 +1,25 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="style.css">
-  
-    <title>Document</title>
+    <title>Web Components Plugin Test</title>
 </head>
+
 <body>
     <!-- Inline style works, but no global css -->
-    <component-1 style="--bg: #2a0282; 
-            color:white; --title: #61fd13;">
+    <component-1 style="--bg: orange; 
+            color:white; 
+            --title: magenta">
     </component-1>
     <component-1 id="second"></component-1>
     <component-2></component-2>
-    <component-3></component-3>
-    
-    <script type="module" src="index.js"></script>
+    <component-3 green></component-3>
+
+    <script type="module" src="index.js" content="application/javascript"></script>
 </body>
+
 </html>

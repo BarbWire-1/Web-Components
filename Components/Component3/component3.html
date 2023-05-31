@@ -1,22 +1,27 @@
+<template>
+<style>
+    :host {
+        display: block;
+        --bg: lightgrey;
+        --title: black;
+        background-color: var(--bg);
+        padding: 10px;
+    }
 
-<template> 
-    <style>
-        :host {
-            display: block;
-            --bg: lightgrey;
-            --title: black;
-            background-color: var(--bg);
-            padding: 10px;
-        }
-    
-        h2 {
-            color: var(--title);
-        }
-    </style>
-    <div part="container">
-        <h2 part="title">Component 3</h2>
-        <p>This is component 3.</p>
-    </div>
+    h2 {
+        color: var(--title);
+    }
+    :host([green]){
+        padding:10px;
+        background: #b0fa8e;
+        color:#938efa;
+        --title: #938efa;
+    }
+</style>
+<div >
+    <h2 part="title">Component 3</h2>
+    <p>This is component 3.</p>
+</div>
 </template>
 
 

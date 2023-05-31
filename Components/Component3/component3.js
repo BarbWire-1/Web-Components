@@ -10,12 +10,12 @@ export class Component3 extends HTMLElement {
 
   async loadTemplate() {
     const response = await fetch('Components/Component3/component3.html');
-      const htmlContent = await response.text();
-      console.log(htmlContent)
+    const htmlContent = await response.text();
+      //console.log(htmlContent)
     
     const parser = new DOMParser();
-      const doc = parser.parseFromString(htmlContent, 'text/html');
-      console.log(doc)
+    const doc = parser.parseFromString(htmlContent, 'text/html');
+      //console.log(doc)
     const template = doc.querySelector('template');
 
     const shadowRoot = this.shadowRoot;

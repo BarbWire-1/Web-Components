@@ -4,16 +4,15 @@ export class Component2 extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
 
-    connectedCallback() {
-      
-        this.loadTemplate();
+  connectedCallback() {
+    this.loadTemplate();
   }
 
   async loadTemplate() {
-    const response = await fetch('Components/component2/component2.html');
+    const response = await fetch('Components/Component2/component2.html');
     const template = await response.text();
     this.constructor.template = template;
-    console.log('loading...')
+    console.log('loading...');
     if (!customElements.get('component-2')) {
       customElements.define('component-2', Component2);
     }

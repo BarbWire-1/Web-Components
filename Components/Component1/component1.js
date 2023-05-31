@@ -12,8 +12,8 @@ export class Component1 extends HTMLElement {
 
   async loadTemplateAndStyles() {
     const [templateText, stylesText] = await Promise.all([
-      (await fetch('Components/component1/component1.html')).text(),
-      (await fetch('Components/component1/style.css')).text(),
+      (await fetch('/Components/Component1/component1.html')).text(),
+      (await fetch('/Components/Component1/style.css')).text(),
     ]);
 
     this.constructor.template = templateText;
