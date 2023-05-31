@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    --bg: lightgrey;
+    --title: black;
+    background-color: var(--bg);
+    padding: 10px;
+  }
+  h2 {
+    color: var(--title)
+  }
+  

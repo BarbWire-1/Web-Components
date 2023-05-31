@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Components Example</title>
+</head>
+
+<body>
+    <!-- Inline style works, but no global css -->
+    <component-1
+        style="--bg: orange; 
+        color:white; 
+        --title: magenta">
+    </component-1>
+    <component-1 id="second"></component-1>
+    <component-2></component-2>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

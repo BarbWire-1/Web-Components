@@ -1,0 +1,10 @@
+:host {
+    display: block;
+    --bg: rgb(188, 239, 234);
+    --title: rgb(29, 20, 211);
+    background-color: var(--bg);
+    padding: 10px;
+  }
+  h2 {
+    color: var(--title)
+  }

@@ -1,0 +1,7 @@
+/* NOT APPLIED */
+#second::part(title){
+    color: #ee2a4b;  
+}
+#second::part(container){
+    background: pink;
+}
