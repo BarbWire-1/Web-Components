@@ -1,6 +1,10 @@
 /* @import 'Components/component1/style.css';
 @import 'Components/component2/style.css'; */
 /* NOT APPLIED  - or better overwritten from component css*/
+*{
+    margin: 0;
+    padding:0;
+}
 #second::part(title){
     color: #ee2a4b;  
 }

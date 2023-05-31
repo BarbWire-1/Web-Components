@@ -24,7 +24,7 @@ export class Component2 extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        @import 'Components/component2/style.css';
+        @import 'Components/Component2/style.css';
       </style>
       ${this.constructor.template}
     `;

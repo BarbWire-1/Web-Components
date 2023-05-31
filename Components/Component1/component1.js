@@ -4,27 +4,26 @@ export class Component1 extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
 
-    connectedCallback() {
-      
-        this.loadTemplate();
+  connectedCallback() {
+    this.loadTemplateAndStyles()
+      .then(() => this.render())
+      .catch((error) => console.error(error));
   }
 
-  async loadTemplate() {
-    const response = await fetch('Components/component1/component1.html');
-    const template = await response.text();
-    this.constructor.template = template;
-    console.log('loading...')
-    if (!customElements.get('component-2')) {
-      customElements.define('component-2', Component2);
-    }
+  async loadTemplateAndStyles() {
+    const [templateText, stylesText] = await Promise.all([
+      (await fetch('Components/component1/component1.html')).text(),
+      (await fetch('Components/component1/style.css')).text(),
+    ]);
 
-    this.render();
+    this.constructor.template = templateText;
+    this.constructor.styles = stylesText;
   }
 
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        @import 'Components/component1/style.css';
+        ${this.constructor.styles}
       </style>
       ${this.constructor.template}
     `;
