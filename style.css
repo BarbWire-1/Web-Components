@@ -1,7 +1,33 @@
+:root {
+    font-family: System, sans-serif;
+}
+:body {
+    display:flex;
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 /* NOT APPLIED  - or better overwridden by component css*/
 #second::part(title){
     color: #ee2a4b;  
 }
 #second::part(container){
-    background: pink;
+    color: #ff00bf;
+    padding: 10px;
 }
+#second{
+    --bg: pink;
+}
+component-1{
+    --bg: yellow
+}
+
+.centered {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }

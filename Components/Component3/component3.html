@@ -1,4 +1,4 @@
-<template>
+<template id="component3-template">
 <style>
     :host {
         display: block;
@@ -6,6 +6,8 @@
         --title: black;
         background-color: var(--bg);
         padding: 10px;
+        margin: 0;
+        width: 50vw;
     }
 
     h2 {
@@ -14,8 +16,9 @@
     :host([green]){
         padding:10px;
         background: #b0fa8e;
-        color:#938efa;
         --title: #938efa;
+        color:var(--title);
+        
     }
 </style>
 <div >

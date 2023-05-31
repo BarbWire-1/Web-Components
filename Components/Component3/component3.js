@@ -4,18 +4,17 @@ export class Component3 extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
 
-  connectedCallback() {
+    connectedCallback() {
+       
     this.loadTemplate();
   }
-
+ 
   async loadTemplate() {
     const response = await fetch('Components/Component3/component3.html');
-    const htmlContent = await response.text();
-      //console.log(htmlContent)
-    
+    const templateHTML = await response.text();
     const parser = new DOMParser();
-    const doc = parser.parseFromString(htmlContent, 'text/html');
-      //console.log(doc)
+    const doc = parser.parseFromString(templateHTML, 'text/html');
+      
     const template = doc.querySelector('template');
 
     const shadowRoot = this.shadowRoot;
