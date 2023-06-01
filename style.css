@@ -22,8 +22,9 @@
 #second{
     --bg: pink;
 }
-component-1{
-    --bg: yellow
+component-4{
+    --bg: yellow;
+    --title: green;
 }
 
 .centered {
