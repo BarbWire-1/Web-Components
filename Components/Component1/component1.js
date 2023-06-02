@@ -11,12 +11,13 @@ export class Component1 extends HTMLElement {
   }
 
   async loadTemplateAndStyles() {
-    const [templateText, stylesText] = await Promise.all([
+    const [templateText] = await Promise.all([
       (await fetch('/Components/Component1/component1.html')).text(),
       
     ]);
 
-    this.constructor.template = templateText;
+      this.constructor.template = templateText;
+      console.log(templateText)
   
   }
 

@@ -1,5 +1,8 @@
+@import './Components/Component1/style.css';
+
 :root {
     font-family: System, sans-serif;
+    --bg: pink
 }
 :body {
     display:flex;
@@ -32,3 +35,4 @@ component-4{
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  
