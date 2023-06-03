@@ -1,20 +1,23 @@
-@import './Components/Component1/style.css';
-
-:root {
-    font-family: System, sans-serif;
-    --bg: pink
+:root{
+    --btnFill1: rgb(81, 255, 0);
 }
-:body {
-    display:flex;
-    
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
 
-/* NOT APPLIED  - or better overwridden by component css*/
+
+my-counter:addBtn{
+    --btnFill1: rgb(246, 255, 0);
+}
+#counter1 {
+	--btnFill: red;
+}
+
+my-counter::part(addBtn){
+	background: rgb(37, 40, 37)
+}
+
+#counter1::part(addBtn) {
+	background: rgb(205, 50, 171)
+}
+
 #second::part(title){
     color: #ee2a4b;  
 }
@@ -25,14 +28,8 @@
 #second{
     --bg: pink;
 }
-component-4{
-    --bg: yellow;
-    --title: green;
-}
-
-.centered {
-    left: 50%;
+.centered{
     top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+    left: 50%;
+    transform: translate(50%, 50%);
+}

@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="import" href="MyCounter.js">
     <link rel="stylesheet" href="style.css">
     <title>Web Components Plugin Test</title>
 </head>
 
 <body>
     <!-- Inline style works, but no global css -->
-    <component-1 
+    <component-1 class="centered"
         style=" --bg: orange; 
                 color:white; 
                 --title: magenta">
@@ -22,6 +23,10 @@
     <component-3 class="test"></component-3>
     <component-4 green></component-4>
     <component-4 ></component-4>
+    <my-counter1 value="50" step="2"></my-counter1>
+    
+    <my-counter centered scaled id="counter1"></my-counter>
+    <my-counter></my-counter>
 
 
     
