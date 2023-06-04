@@ -30,6 +30,9 @@ my-counter::part(addBtn){
     --text: white;
     --title: magenta;
 }
+#first1::slotted(button){
+    --bg: green;
+}
 
 #second1{
     --bg: pink;

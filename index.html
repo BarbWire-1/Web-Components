@@ -14,9 +14,11 @@
     <!-- <my-counter1 class="centeredH" value="50" step="2"></my-counter1> -->
     <!-- Inline style works, but no global css -->
     <component-1 id="first1">
-                <component-2 slot="nested" ></component-2>
-                <component-2 slot="nested"></component-2>
+        <component-2 slot="nested" ></component-2>
+        <component-2 slot="nested"></component-2>
+        <button class="centeredH" slot="nested" style="background: var(--title); color: var(--text)">I'm a nested button</button>
     </component-1>
+    
     <component-1 id="second1"></component-1>
     <component-2></component-2>
     <component-3 pastel></component-3>
