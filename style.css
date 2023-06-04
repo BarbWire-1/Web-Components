@@ -25,8 +25,15 @@ my-counter::part(addBtn){
     color: #ff00bf;
     /* padding: 10px; */
 }
-#second{
+#first1{
+    --bg: orange; 
+    --text: white;
+    --title: magenta;
+}
+
+#second1{
     --bg: pink;
+    --title: magenta;
 }
 .centered{
     top: 50%;

@@ -4,21 +4,32 @@
         display: block;
         --bg: lightgrey;
         --title: black;
+        --text: black;
         background-color: var(--bg);
         padding: 10px;
         width: 50vw;
+    }
+    
+    ::slotted(*){
+        position: relative;
+        width:calc(100% - 20px);
     }
 
     h2 {
         color: var(--title)
     }
+    p{
+        color: var(--text);
+    }
+    
    
 </style>
 
 <div part="container">
     <h2 part="title">Component 1</h2>
+    <slot name="nested"></slot>
     <p>This is component 1.</p>
     
-    <slot name="nested"></slot>
+   
 </div>
 

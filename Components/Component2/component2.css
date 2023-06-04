@@ -5,6 +5,7 @@
     background-color: var(--bg);
     padding: 10px;
     width: 50vw;
+    color: black;
   }
   h2 {
     color: var(--title)
