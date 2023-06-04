@@ -11,22 +11,24 @@
 </head>
 
 <body>
+    <my-counter1 class="centeredH" value="50" step="2"></my-counter1>
     <!-- Inline style works, but no global css -->
     <component-1 class="centered"
         style=" --bg: orange; 
                 color:white; 
                 --title: magenta">
+                <component-2 slot="nested"></component-2>
     </component-1>
     <component-1 id="second"></component-1>
     <component-2></component-2>
     <component-3 pastel></component-3>
     <component-3 class="test"></component-3>
     <component-4 green></component-4>
-    <component-4 ></component-4>
-    <my-counter1 value="50" step="2"></my-counter1>
+    <component-4 id="ugly"></component-4>
+    
     
     <my-counter centered scaled id="counter1"></my-counter>
-    <my-counter></my-counter>
+    <my-counter ></my-counter>
 
 
     

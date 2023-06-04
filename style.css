@@ -23,7 +23,7 @@ my-counter::part(addBtn){
 }
 #second::part(container){
     color: #ff00bf;
-    padding: 10px;
+    /* padding: 10px; */
 }
 #second{
     --bg: pink;
@@ -33,3 +33,21 @@ my-counter::part(addBtn){
     left: 50%;
     transform: translate(50%, 50%);
 }
+.centeredH{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+
+.test{
+    --bg: orange;
+    --title: magenta;
+}
+
+#ugly{
+    --bg: yellow;
+    --title: #1a9c13;
+}
+
